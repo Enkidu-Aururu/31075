@@ -22,10 +22,11 @@ setup(
 )
 ```
 
-I thought so because in this way we do not define [project_urls keyword](https://setuptools.pypa.io/en/latest/references/keywords.html),
+I thought so because in this way, we do not define [project_urls keyword](https://setuptools.pypa.io/en/latest/references/keywords.html),
 which is mentioned in the [Renovates pypi datasource](https://github.com/renovatebot/renovate/discussions/31075).
 
-But when I did try to reproduce this behavior in this repo by the following commands for public PYPI, I was not successful.
+But when I did try to reproduce this behavior with the local **setup.py** and by the following commands for the public PYPI,
+I was not successful.
 ```bash
 python3.12 -m venv venv
 . venv/bin/activate
