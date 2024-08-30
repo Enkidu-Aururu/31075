@@ -1,17 +1,26 @@
-# minimal-reproduction-template
+# 31075
 
-First, read the [Renovate minimal reproduction instructions](https://github.com/renovatebot/renovate/blob/main/docs/development/minimal-reproductions.md).
+git@github.com:Enkidu-Aururu/31075.git# minimal-reproduction-template
 
-Then replace the current `h1` with the Renovate Issue/Discussion number.
+Based on [Renovate minimal reproduction instructions](https://github.com/renovatebot/renovate/blob/main/docs/development/minimal-reproductions.md).
 
-## Current behavior
+## Problem
 
-Explain the current behavior here.
+TODO:
 
-## Expected behavior
+Python Package was created by the folowing commands.
+```bash
+python3.12 -m venv venv
+. venv/bin/activate
+grep -v "renovate-" requirements.txt | xargs -i pip install {}
+python3.12 -m build
+twine upload dist/* --skip-existing
+```
 
-Explain the expected behavior here.
+## Expectation
 
-## Link to the Renovate issue or Discussion
+TODO
 
-Put your link to the Renovate issue or Discussion here.
+## References
+
+[Renovate discussion #31075](https://github.com/renovatebot/renovate/discussions/31075 "Could PYPI datasource accept also look into url field?")
